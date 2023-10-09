@@ -2,48 +2,65 @@ body {
   background: black;
   text-align: center;
 }
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+main {
+  margin: 0 auto;
+  /* background-color: #333333; */
+  color: #FF0000;
+  font-family: "Gadget", "sans-serif";
+  max-width: 90%;
+  border-radius: 10px;
+}
+
 h1 {
+  animation-name: fadeIn;
+  animation-duration: 2s;
   font-size: 64px;
   font-family: "Impact";
 }
+
 h2 {
+  animation-name: fadeIn;
+  animation-duration: 2s;
   padding: 0 40px 0 40px;
   font-size: 20px;
   font-family: "Helvetica";
 }
-main {
-  margin: 0 auto;
-  background-color: #333333;
-  color: #FF0000;
-  font-family: "Gadget", "sans-serif";
-  max-width: 90%;
-}
+
 img {
+  animation-name: fadeIn;
+  animation-duration: 2s;
   max-width: 100%;
+  border-radius: 10px;
 }
+
 .cover {
   /* background-color: #aaaaaa; */
   padding: 0.5em;
   margin: 0.5em;
 }
-p {
-  font-size: 14px;
-  color: #000000;
-  margin: 0 5% 0 5%;
-}
+
 h3 {
   color: white;
 }
+
 ul {
   margin: 0 200px 0 250px;
   text-align: left;
   color: white;
 }
+
 .quote {
   font-size: 1.6em;
   color: white;
   margin: 0 10% 0 10%;
 }
+
 a {
   text-decoration: underline;
   color: rgb(255,10,10);
@@ -58,21 +75,19 @@ a {
   top: 5px;
   z-index: -1;
 }
+
 .bg p {
   color: white;
   margin: 0;
   font-size: 18px;
 }
+
 .bg-cursor {
   border-right: solid 1px white;
 }
 
 @media only screen and (min-width: 660px) {
   main {
-    margin: 0 auto;
-    background-color: #333333;
-    color: #FF0000;
-    font-family: "Gadget", "sans-serif";
     max-width: 40%;
   }
 }
