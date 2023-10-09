@@ -1,0 +1,78 @@
+body {
+  background: black;
+  text-align: center;
+}
+h1 {
+  font-size: 64px;
+  font-family: "Impact";
+}
+h2 {
+  padding: 0 40px 0 40px;
+  font-size: 20px;
+  font-family: "Helvetica";
+}
+main {
+  margin: 0 auto;
+  background-color: #333333;
+  color: #FF0000;
+  font-family: "Gadget", "sans-serif";
+  max-width: 90%;
+}
+img {
+  max-width: 100%;
+}
+.cover {
+  /* background-color: #aaaaaa; */
+  padding: 0.5em;
+  margin: 0.5em;
+}
+p {
+  font-size: 14px;
+  color: #000000;
+  margin: 0 5% 0 5%;
+}
+h3 {
+  color: white;
+}
+ul {
+  margin: 0 200px 0 250px;
+  text-align: left;
+  color: white;
+}
+.quote {
+  font-size: 1.6em;
+  color: white;
+  margin: 0 10% 0 10%;
+}
+a {
+  text-decoration: underline;
+  color: rgb(255,10,10);
+  font-size: 16px;
+}
+
+.bg {
+  font-family: "Courier New";
+  text-align: left;
+  position: fixed;
+  left: 5px;
+  top: 5px;
+  z-index: -1;
+}
+.bg p {
+  color: white;
+  margin: 0;
+  font-size: 18px;
+}
+.bg-cursor {
+  border-right: solid 1px white;
+}
+
+@media only screen and (min-width: 660px) {
+  main {
+    margin: 0 auto;
+    background-color: #333333;
+    color: #FF0000;
+    font-family: "Gadget", "sans-serif";
+    max-width: 40%;
+  }
+}
