@@ -1,5 +1,19 @@
-var typing;
-var poem = `Yes it is contradictory,
+const poems = [
+    `Is it afternoon or does gloom loom around corners
+    edge every break of day when memories stain all the pieces of a puzzle
+    you've yet to complete
+    justifying explanations why it isn't in a frame
+    how can arcane meanings of magik lead to tangents ruled as tactics used backwards
+    in a mirror reflecting self
+    ready to receive a grave explaining as you're sinking under oceans 
+    tidal faced simultaneously existing in a completely different state cycling back as interpersonal conflicts
+    Schrodinger's cat
+    expounding faith 
+    fondly amounting to encountering
+    interpretation of wether or not your drowning
+    or just trying to wave`,
+
+    `Yes it is contradictory,
     at the same time re learning how to communicate directly
     with advice soaked in therapy is what is deemed necessary for progress
     regardless of this being cathartic catalyst in the depths of
@@ -10,14 +24,33 @@ var poem = `Yes it is contradictory,
     that brought belief in finally shedding this disease
 
     May the connection never cease, 
-    entwined by time there is no other outcome ebsides meeting each other in dreams
-`
-var visibleText = "";
-var poemArray = poem.split("");
-var cursorPosition = 0;
-var cursorShown = true;
+    entwined by time there is no other outcome 
+    besides meeting each other in dreams`,
 
-var typing = setInterval(function() {
+    `Familiar space sat back
+    rested rideshare Etiquette begets small talk rhetoric
+    until silence arrives here 
+    couldn't feel better about letting this go
+    moving on
+    seemed like it was doing harm until realizations lead to finding peace within own arms
+    how long a timeframe to switch mind states
+    dig into deepest of holse
+    some say god shaped
+    but who in hell knows
+    prescribed ideals of how to feel
+    daily spills over into throws of conniption fits
+    mixed with this misanthropic vision of what it means to exist`
+]
+
+const poem = getRandomPoem();
+const poemArray = poem.split("");
+
+let visibleText = "";
+
+let cursorPosition = 0;
+let cursorShown = true;
+
+const typing = setInterval(function() {
     if(poemArray[cursorPosition] == '\n') {
         visibleText += `<br>`
     }
@@ -41,6 +74,11 @@ function blink() {
     cursorShown = true;
     setTimeout(blink, 400);
   }
+}
+
+function getRandomPoem() {
+    const index = Math.floor(Math.random() * poems.length);
+    return poems[index];
 }
 
 blink();
