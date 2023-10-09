@@ -34,7 +34,7 @@ const poems = [
     moving on
     seemed like it was doing harm until realizations lead to finding peace within own arms
     how long a timeframe to switch mind states
-    dig into deepest of holse
+    dig into deepest of holes
     some say god shaped
     but who in hell knows
     prescribed ideals of how to feel

@@ -86,7 +86,7 @@ a {
   border-right: solid 1px white;
 }
 
-@media only screen and (min-width: 660px) {
+@media only screen and (min-width: 900px) {
   main {
     max-width: 40%;
   }
