@@ -12,29 +12,26 @@ main {
   margin: 0 auto;
   /* background-color: #333333; */
   color: #FF0000;
-  font-family: "Gadget", "sans-serif";
+  font-family: "Metal Mania", "Gadget", "sans-serif";
   max-width: 90%;
   border-radius: 10px;
 }
 
 h1 {
-  animation-name: fadeIn;
-  animation-duration: 2s;
+  animation: fadeIn 2s;
   font-size: 64px;
-  font-family: "Impact";
+  /* font-family: "Impact"; */
 }
 
 h2 {
-  animation-name: fadeIn;
-  animation-duration: 2s;
+  animation: fadeIn 2s;
   padding: 0 40px 0 40px;
-  font-size: 20px;
-  font-family: "Helvetica";
+  font-size: 24px;
+  /* font-family: "Helvetica"; */
 }
 
 img {
-  animation-name: fadeIn;
-  animation-duration: 2s;
+  animation: fadeIn 2s;
   max-width: 100%;
   border-radius: 10px;
 }
@@ -45,30 +42,42 @@ img {
   margin: 0.5em;
 }
 
+section.stories {
+  opacity: 0;
+  animation: fadeIn 2s forwards 1s;
+}
+
 h3 {
   color: white;
+  font-size: 24px;
 }
 
 ul {
-  margin: 0 200px 0 250px;
-  text-align: left;
+  margin: 0 auto;
+  padding: 0;
   color: white;
+  width: 80%;
 }
 
-.quote {
-  font-size: 1.6em;
-  color: white;
-  margin: 0 10% 0 10%;
+li {
+  border-radius: 10px;
+  background-color: #333333;
+  margin: 10px 0 10px 0;
+  padding: 10px;
+  list-style-type: none;
+  text-align: left;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 a {
   text-decoration: underline;
   color: rgb(255,10,10);
-  font-size: 16px;
+  font-size: 20px;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 .bg {
-  font-family: "Courier New";
+  font-family: 'Courier New', Courier, monospace;
   text-align: left;
   position: fixed;
   left: 5px;
