@@ -42,27 +42,40 @@ const poems = [
     mixed with this misanthropic vision of what it means to exist`
 ]
 
-const poem = getRandomPoem();
-const poemArray = poem.split("");
-
 let visibleText = "";
 
 let cursorPosition = 0;
 let cursorShown = true;
 
-const typing = setInterval(function() {
-    if(poemArray[cursorPosition] == '\n') {
-        visibleText += `<br>`
+let typing;
+
+function loadPoem() {
+  const poem = getRandomPoem();
+  const poemArray = poem.split("");
+  
+  typePoem(poemArray);
+}
+
+function getRandomPoem() {
+    const index = Math.floor(Math.random() * poems.length);
+    return poems[index];
+}
+
+function typePoem(poemArray) {
+  typing = setInterval(() => {
+      if(poemArray[cursorPosition] == '\n') {
+          visibleText += `<br>`
+      }
+      if (cursorPosition < poemArray.length) {
+          visibleText += poemArray[cursorPosition];
+          $('div.bg > p').html(visibleText);
+          cursorPosition++;
     }
-    if (cursorPosition < poemArray.length) {
-        visibleText += poemArray[cursorPosition];
-        $('div.bg > p').html(visibleText);
-        cursorPosition++;
-  }
-  else {
-      clearInterval(typing);
-  }
-}, 80);
+    else {
+        clearInterval(typing);
+    }
+  }, 80);
+}
 
 function blink() {
   if (cursorShown === true) {
@@ -76,9 +89,5 @@ function blink() {
   }
 }
 
-function getRandomPoem() {
-    const index = Math.floor(Math.random() * poems.length);
-    return poems[index];
-}
-
 blink();
+loadPoem();

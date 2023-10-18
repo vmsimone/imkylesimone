@@ -8,9 +8,14 @@ body {
   to {opacity: 1;}
 }
 
+@keyframes fadeOut {
+  from {opacity: 1;}
+  to {opacity: 0;}
+}
+
 main {
   margin: 0 auto;
-  /* background-color: #333333; */
+  margin-bottom: 20px;
   color: #FF0000;
   font-family: "Metal Mania", "Gadget", "sans-serif";
   max-width: 90%;
@@ -20,14 +25,12 @@ main {
 h1 {
   animation: fadeIn 2s;
   font-size: 64px;
-  /* font-family: "Impact"; */
 }
 
 h2 {
   animation: fadeIn 2s;
   padding: 0 40px 0 40px;
   font-size: 24px;
-  /* font-family: "Helvetica"; */
 }
 
 img {
@@ -37,7 +40,6 @@ img {
 }
 
 .cover {
-  /* background-color: #aaaaaa; */
   padding: 0.5em;
   margin: 0.5em;
 }
@@ -52,6 +54,14 @@ h3 {
   font-size: 24px;
 }
 
+a {
+  text-decoration: underline;
+  color: rgb(255,10,10);
+  font-size: 18px;
+  font-family: 'Courier New', Courier, monospace;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow', sans-serif;
+}
+
 ul {
   margin: 0 auto;
   padding: 0;
@@ -62,18 +72,33 @@ ul {
 li {
   border-radius: 10px;
   background-color: #333333;
-  margin: 10px 0 10px 0;
+  margin: 20px 0 20px 0;
   padding: 10px;
   list-style-type: none;
   text-align: left;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
-a {
-  text-decoration: underline;
-  color: rgb(255,10,10);
-  font-size: 20px;
-  font-family: 'Courier New', Courier, monospace;
+.poems {
+  margin-bottom: 20px;
+  opacity: 0;
+  animation: fadeIn 2s forwards 1s;
+}
+
+button {
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  background-color: #5f0000;
+  color: white;
+  font-family: "Metal Mania", "Gadget", "sans-serif";
+  font-size: 18px;
+}
+
+button:hover,
+button:active {
+  cursor: pointer;
+  background-color: #8c0000;
 }
 
 .bg {
