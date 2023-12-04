@@ -39,7 +39,64 @@ const poems = [
     but who in hell knows
     prescribed ideals of how to feel
     daily spills over into throws of conniption fits
-    mixed with this misanthropic vision of what it means to exist`
+    mixed with this misanthropic vision of what it means to exist`,
+
+    `Dissonance disappearance of any semblance that this even existed
+    any chance to resit connection of the ocular nervous
+    tension sparks
+    no talks
+    sitting silent
+    awkward distance
+    feels immense considering proximity of flesh
+    never mind those thin white hairs that ouline and grace your neck
+    how incredible if only to be able to engage
+    Hold embrace your every cresting wave
+    take me back face to face when we sat
+    third eyes wide needing nothing more than that
+    present moments space fires burning living life
+    love warmed by this twin flames embers glowing light`,
+
+    `Anti lethargic during catharsis 
+    persistent election selecting masochistic catalyst for change
+    breaking down patterns repeating cyclical states
+    same example 
+    definition insane
+    so making mistakes takes humility in process
+    regardless of magnituted of love that was lost
+    cross between codependency living idealistic reaps cost within dreams
+    rapid eye movement states take away to fantasy
+    beliving reality still exists when we shared interconnectedness mixed bliss
+    plus saliva from our lips`,
+
+    `Funny how regrets left with giving everyone else my best instead of investing in this broken body
+    and whatever of a sooul that's left
+    how far gone off a path that at one time felt heaven sent
+    beyond cosmos
+    personifying purpose
+    in a world of misdirection elected to pass on dreams and fantasies
+    rather be a masochistic glutton for punishment
+    consistently working jobs
+    searching answers
+    ending up with none`,
+
+    `Speaks of December cold
+    kneeling down counting bodies
+    sifting through old bones
+    contemplating magic
+    it happens
+    fantastic damage imagining throws of passion
+    could relapse on an addiction to lips hips breasts
+    call it combining a couple savages
+    maybe it's the mystery from first sight till late night
+    star counts calculating infinity or just that
+    when eyes meet there's a secret meaning between the distance
+    felt left wondering how skin is felt
+    push the sheets upon flooboards
+    amassing physicality towards crafting folk lore
+    based upon feeding of seething for lorn
+    forgotten wants needs desires and meaning
+    waiting on arriving at the destination
+    is only reminding of the credence`
 ]
 
 let visibleText = "";
